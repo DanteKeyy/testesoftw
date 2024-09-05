@@ -1,0 +1,185 @@
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin: 0 0 24px;
+}
+
+main .video {
+  position: relative;
+}
+
+.video video {
+  display: block;
+  width: 100%;
+  height: 100dp;
+}
+
+.video .description {
+  position: absolute;
+  bottom: 80px;
+  left: 80px;
+  color: #fff;
+  font-size: 24px;
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  gap: 16px;
+}
+
+.video .description span {
+  color: #fafafa;
+  font-weight: bold;
+  line-height: 90%;
+}
+
+.video .description .title {
+  color: #fafafa;
+  font-size: 1rem;
+}
+
+.video .description .desc {
+  color: #fafafa;
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+.video .description a {
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  color: #000;
+  background-color: #fafafa;
+  width: 28%;
+  height: 47px;
+  transition: .2s ease-in-out;
+}
+
+.video .description a:hover {
+  background-color: rgba(255, 255, 255, 0.64);;
+}
+
+main h1 {
+  text-align: center;
+  font-weight: 600;
+}
+
+main .pets {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.pets .pet-content {
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+}
+
+.pet-content .type {
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.56);
+  font-weight: 500;
+}
+
+.pet-content .name {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.pet-content .name .title {
+  font-weight: 500;
+}
+
+.pet-content .name .description {
+  font-weight: 100;
+}
+
+.pet-content .buy {
+  font-size: 12px;
+}
+
+.pet-content .buy .start {
+  font-weight: 300;
+}
+
+.pet-content .buy .price {
+  font-weight: 400;
+}
+
+.pet-content .buy .indisponible {
+  color: rgb(255, 0, 0);
+}
+
+.pet-content .zoom-image {
+  width: 290px;
+  height: 210px;
+  overflow: hidden;
+  margin: 16px 0;
+}
+
+.pet-content img {
+  width: 290px;
+  height: 210px;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.pet-content:hover img {
+  transform: scale(1.1);
+}
+
+.pet-content:hover span {
+  color: #e13f60;
+}
+
+.pet .functions {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.pet .functions span {
+  color: #e13f60;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+  transition: all 0.2s ease-in-out;
+}
+
+.pet .functions span:hover {
+  color: #000;
+}
+
+main .show-all {
+  align-self: center;
+  border: 1px solid #e13f60;
+  border-radius: 8px;
+  padding: 12px 24px;
+  transition: all 0.2s ease-in-out;
+}
+
+main .show-all:hover {
+  background-color: #e13f60;
+}
+
+main .show-all:hover span {
+  color: #E9B7C1;
+}
+
+main .show-all span {
+  color: #e13f60;
+  font-weight: bold;
+  text-transform: uppercase;
+}
